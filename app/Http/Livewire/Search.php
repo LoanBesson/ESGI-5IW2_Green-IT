@@ -9,6 +9,8 @@ use Illuminate\Support\Facades\DB;
 class Search extends Component
 {
     public $search = '';
+    public $scoring = null;
+    public $type = 0;
 
     public function render()
     {
@@ -19,8 +21,7 @@ class Search extends Component
                         ->orWhere('libcom', 'ILIKE', '%'.str_replace(' ', '-', $this->search).'%')
                         ->orderBy('libcom')
                         ->distinct('libcom')
-                        ->get()
-                        ->take(10);
+                        ->get();
 
             $departments = DB::table('scorings')
                             ->select(['id', 'libdep'])
@@ -43,13 +44,16 @@ class Search extends Component
             $cities = collect();
             $departments = collect();
             $states = collect();
+            $this->scoring = null;
+            $this->type = 0;
         }
 
         return view('livewire.search', compact('cities', 'departments', 'states'));
     }
 
-    public function show(Scoring $city)
+    public function scoring(Scoring $scoring, int $type)
     {
-        dd($city->score_global_epci_1);
+        $this->type = $type;
+        $this->scoring = $scoring;
     }
 }
