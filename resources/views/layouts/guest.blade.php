@@ -28,7 +28,7 @@
 
             {{ $slot }}
 
-            <div class="fixed bottom-0 w-full">
+            <div class="w-full">
                 <div class="flex justify-center">
                     <picture class="mr-4">
                         <source srcset="{{ asset('img/agence.webp') }}">
