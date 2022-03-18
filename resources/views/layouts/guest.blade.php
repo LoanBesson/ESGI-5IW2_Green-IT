@@ -20,7 +20,28 @@
     </head>
     <body>
         <div class="font-sans text-white bg-gray-800 min-h-screen antialiased">
+            <picture class="absolute top-12 left-16 w-64">
+                <source srcset="{{ asset('img/logo-inr-webp.webp') }}">
+                <source srcset="{{ asset('img/logo-inr.jpeg') }}">
+                <img src="{{ asset('img/logo-inr.jpeg') }}" alt="Logo INR">
+            </picture>
+
             {{ $slot }}
+
+            <div class="fixed bottom-0 w-full">
+                <div class="flex justify-center">
+                    <picture class="mr-4">
+                        <source srcset="{{ asset('img/agence.webp') }}">
+                        <source srcset="{{ asset('img/agence.jpeg') }}">
+                        <img src="{{ asset('img/agence.jpeg') }}" class="h-24" alt="Logo Agence">
+                    </picture>
+                    <picture>
+                        <source srcset="{{ asset('img/med.webp') }}">
+                        <source srcset="{{ asset('img/med.jpeg') }}">
+                        <img src="{{ asset('img/med.jpeg') }}" class="h-24" alt="Logo Med">
+                    </picture>
+                </div>
+            </div>
         </div>
 
         @livewireScripts
