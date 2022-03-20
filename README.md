@@ -15,10 +15,10 @@ Nous n’avons pas choisi d’utiliser un outil de représentation graphique, ce
 Nous avons opté pour un design épuré pour que l’utilisateur est accès à l’information qu’il souhaite très facilement au premier coup d’œil.
 Notre site est éco conçue car il ne fait pas de requête inutile, c’est à dire que ne sont pas utile à l’accès de l’information par l’utilisateur. Les images sont optimisées. Nous n’utilisons pas de package inutiles.
 
-Screen du score :
+Screen du score Lighthouse :
 
 <img width="464" alt="Capture d’écran 2022-03-20 à 22 32 38" src="https://user-images.githubusercontent.com/56297236/159186847-2f7bfb85-bcfa-43cf-8ce4-adb73f36bcd5.png">
- Lighthouse :
+
 
 
 
