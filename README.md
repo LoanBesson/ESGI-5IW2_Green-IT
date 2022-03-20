@@ -16,7 +16,9 @@ Nous avons opté pour un design épuré pour que l’utilisateur est accès à l
 Notre site est éco conçue car il ne fait pas de requête inutile, c’est à dire que ne sont pas utile à l’accès de l’information par l’utilisateur. Les images sont optimisées. Nous n’utilisons pas de package inutiles.
 
 Screen du score Lighthouse :
+
 <img width="482" alt="Capture d’écran 2022-03-20 à 22 24 18" src="https://user-images.githubusercontent.com/56297236/159186644-83daa499-b89c-41d5-9e9e-2d9290531bba.png">
 
 Screen du site :
+
 <img width="345" alt="Capture d’écran 2022-03-20 à 22 24 52" src="https://user-images.githubusercontent.com/56297236/159186713-c439795a-2f58-4fd0-b7c3-96e160d1ad9a.png">
